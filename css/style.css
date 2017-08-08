@@ -40,14 +40,14 @@ header {
 }
 .contacts-information{
     background: #ededed;
-    padding: 13px 140px;
+    padding: 10px 139px 15px 139px;
 }
 .address-block{
     float: left;
 }
 .address-block div{
     display: inline-block;
-    margin-right: 35px;
+    margin-right: 33px;
 }
 .social-icons{
     float: right;
@@ -56,15 +56,23 @@ header {
 .social-icons ul li{
     margin-left: 22px;
 }
+.social-icons ul li:first-child{
+    margin-left: 0;
+}
 .fa-phone,
 .fa-location-arrow{
     color: #000;
+    margin-right: 4px;
+    vertical-align: middle;
+}
+.fa-phone:before, .fa-location-arrow:before {
+    font-size: 22px;
 }
 .city{
     background: #000;
     color: #fff;
     border-radius: 3px;
-    padding: 6px 14px;
+    padding: 7px 14px;
 }
 .fa-angle-down{
     margin-left: 15px;
@@ -112,9 +120,11 @@ header {
     display: block;
 }
 .static-info ul li {
-    padding-right: 35px;
     border-right: 1px solid #e6e6e6;
-    margin-right: 18px;
+    margin-right: 14px;
+}
+.static-info ul li:nth-child(1){
+    padding-right: 39px;
 }
 .static-info ul li:nth-child(2){
     margin-right: -21px;
@@ -127,6 +137,7 @@ header {
     border-right: none;
     padding-right: 0;
     margin-right: -2px;
+    margin-left: 36px;
 }
 /*******************  */
 
@@ -145,6 +156,9 @@ header {
 .bars {
     display: none;
 }
+.fa-bars:before {
+    font-size: 20px;
+}
 .navigation nav{
     float: left;
 }
@@ -160,10 +174,9 @@ nav li a:hover{
     color: #fff;
     border-bottom: 6px solid #bd2631;
 }
-.current a{
-    border-bottom: 6px solid #bd2631;
-
-}
+/*.current a{*/
+    /*border-bottom: 6px solid #bd2631;*/
+/*}*/
 .search{
     float: right;
     margin-right: 1.75%;
@@ -234,18 +247,24 @@ nav li a:hover{
     color: white;
     line-height: 2.4em;
 }
-
-.request button{
-    margin-top: 1.5%;
-    margin-right: 7%;
-    padding-top: 17px;
-    padding-right: 17px;
-    padding-bottom: 17px;
-    padding-left: 44px;
-    border-radius: 5px;
-    display: inline-block;
+.button {
+    border: 1px solid white;
+    border-radius: 4px;
+    background-color: white;
+    color: black;
     float: right;
-
+    width: 138px;
+    height: 50px;
+    box-sizing: border-box;
+    padding: 8px 0 0;
+    margin: 19px 7% 1px 1px;
+}
+.button a {
+    display: block;
+    height: 100%;
+    text-align: center;
+    vertical-align: middle;
+    font-weight: bolder;
 }
 .request_text{
     float: left;
@@ -360,33 +379,43 @@ nav li a:hover{
     text-align: center;
     height: 33em;
 }
-.infobar .infoblock:nth-child(1) img  {
-    margin: 10% 0 1% 17%;
+.infobar .infoblock img {
+    margin: 50px 0 0 0;
 }
-.infobar .infoblock:nth-child(2) img  {
-     margin: 14% 0 0 11%;
- }
-.infobar .infoblock:nth-child(3) img  {
-     margin: 11.5% 7% 0 0;
- }
-.infobar .infoblock:nth-child(1) h2  {
-    margin: 10% 0 0 14%;
+.infobar .infoblock h2 {
+    margin: 46px 0 0 0;
 }
-.infobar .infoblock:nth-child(2) h2  {
-     margin: 7% 0 0 11%;
- }
-.infobar .infoblock:nth-child(3) h2  {
-     margin: 9.5% 7.7% 0 0;
- }
-.infobar .infoblock:nth-child(1) p  {
-    padding: 6% 0 0 12%;
+.infobar .infoblock p {
+    padding: 31px 40px;
 }
-.infobar .infoblock:nth-child(2) p  {
-    padding: 6.5% 2% 0 11%;
- }
-.infobar .infoblock:nth-child(3) p  {
-    padding: 6.6% 13% 0 4.5%;
- }
+
+/*.infobar .infoblock:nth-child(1) img  {*/
+    /*margin: 10% 0 1% 17%;*/
+/*}*/
+/*.infobar .infoblock:nth-child(2) img  {*/
+     /*margin: 14% 0 0 11%;*/
+ /*}*/
+/*.infobar .infoblock:nth-child(3) img  {*/
+     /*margin: 11.5% 7% 0 0;*/
+ /*}*/
+/*.infobar .infoblock:nth-child(1) h2  {*/
+    /*margin: 10% 0 0 14%;*/
+/*}*/
+/*.infobar .infoblock:nth-child(2) h2  {*/
+     /*margin: 7% 0 0 11%;*/
+ /*}*/
+/*.infobar .infoblock:nth-child(3) h2  {*/
+     /*margin: 9.5% 7.7% 0 0;*/
+ /*}*/
+/*.infobar .infoblock:nth-child(1) p  {*/
+    /*padding: 6% 0 0 12%;*/
+/*}*/
+/*.infobar .infoblock:nth-child(2) p  {*/
+    /*padding: 6.5% 2% 0 11%;*/
+ /*}*/
+/*.infobar .infoblock:nth-child(3) p  {*/
+    /*padding: 6.6% 13% 0 4.5%;*/
+ /*}*/
 
 .infoblock h2 {
     color: #bd2631;
@@ -435,6 +464,7 @@ nav li a:hover{
 .we-serve {
     position: relative;
     max-width: 100%;
+    margin-top: -2px;
 }
 .we-serve .wsimage .wstext {
     display: none;
@@ -575,7 +605,11 @@ nav li a:hover{
 }
 
 /* ------------------  RESPONSIVE   ---------------------*/
+
 @media screen and (max-width: 1200px){
+    .contacts-information {
+        padding: 10px 90px 15px 90px;
+    }
     .navigation {
         padding: 0 90px;
     }
@@ -593,6 +627,9 @@ nav li a:hover{
     }
 }
 @media screen and (max-width: 1060px){
+    .contacts-information {
+        padding: 10px 30px 15px 30px;
+    }
     .logo,
     .static-info{
         float: none;
@@ -603,7 +640,11 @@ nav li a:hover{
     .navigation {
         padding: 0 70px;
     }
+    .infobar .infoblock p {
+        padding: 31px 5px;
+    }
 }
+
 @media screen and (max-width: 995px){
     .block{
         padding-right: 40px;
@@ -614,7 +655,7 @@ nav li a:hover{
     }
     nav li a{
         font-size: 13px;
-        padding: 25px 12px 16px;
+        padding: 19px 12px 16px;
     }
     .slidertext2 {
         top: 5%;
@@ -681,46 +722,70 @@ nav li a:hover{
         margin-left: 2%;
     }
 }
+@media screen and (max-width: 935px) {
+    div.phone,
+    div.address {
+        display: block;
+        margin: 10px 0;
+    }
+
+    .mobile-menu {
+        display: block;
+    }
+}
 @media screen and (max-width: 760px){
-        .navigation {
+    div.phone,
+    div.address {
+        display: block;
+        margin: 10px 0;
+    }
+
+    .mobile-menu {
+        display: block;
+    }
+
+    #menu li {
+        display: block;
+        padding: 10px 0;
+        border-bottom: 1px solid #e6e6e6;
+    }
+
+    #menu li a,
+    #menu li a:hover {
+        border-bottom: none;
+    }
+
+    #menu li a {
+        padding: 0;
+    }
+
+    #menu li:last-of-type {
+        border-bottom: none;
+    }
+
+    .navigation-menu {
+        display: none;
+    }
+    .logo-section {
+        padding: 29px 10px;
+    }
+    .navigation {
         padding-left: 1%;
         padding-right: 1%;
     }
     nav li a {
         font-size: 10px;
-        padding: 20px 72px 14px;
+        margin: 0px 0px 0px 16px;
+        border-bottom: hidden;
+    }
+    nav li a:hover{
+        border-bottom: hidden;
     }
     .search {
         float: right;
         margin-left: 2%;
         margin-right: 8%;
         line-height: 3;
-    }
-    div.phone,
-    div.address{
-        display: block;
-        margin: 10px 0;
-    }
-    .mobile-menu{
-        display: block;
-    }
-    #menu li{
-        display: block;
-        padding: 10px 0;
-        border-bottom: 1px solid #e6e6e6;
-    }
-    #menu li a,
-    #menu li a:hover{
-        border-bottom: none;
-    }
-    #menu li a{
-        padding: 0;
-    }
-    #menu li:last-of-type{
-        border-bottom: none;
-    }
-    .navigation-menu {
-        display: none;
     }
     .bars {
         display: block;
@@ -729,9 +794,9 @@ nav li a:hover{
         float: none;
         text-align: center;
     }
-    .request button {
+    .button {
         float: none;
-        margin-left: 40%;
+        margin-left: 37%;
     }
     .s122 {
         font-size: 22px;
@@ -739,6 +804,13 @@ nav li a:hover{
     }
     .s124 {
         font-size: 15px;
+    }
+    .infoblock {
+        float: none;
+        width: 100%;
+    }
+    .infobar .infoblock p {
+        padding: 31px 15%;
     }
     .slidertext2 {
         top: 15%;
@@ -782,10 +854,14 @@ nav li a:hover{
         width: 100%;
     }
 
-    .infoblock {
-        float: none;
-        width: 100%;
-    }
+    /*.infobar .infoblock img {*/
+        /*margin: 1px 1px;*/
+    /*}.infobar .infoblock h2 {*/
+        /*margin: 0 0;*/
+     /*}*/
+    /*.infobar .infoblock p {*/
+        /*margin: 0 0;*/
+    /*}*/
 
     .wstext {
         font-size: 0.65em;
@@ -831,13 +907,19 @@ nav li a:hover{
 }
 
 @media screen and (max-width: 570px){
+    .static-info {
+        margin-right: 15px;
+    }
     .static-info ul li{
         display: block;
         padding-right: 0;
-        margin: 10px 0;
+        margin: 10px 0 10px 20px;
         border: none;
         width: 160px;
         text-align: left;
+    }
+    .static-info ul li:last-of-type {
+        margin-left: 20px;
     }
     .slidertext {
         top: 43%;
@@ -872,7 +954,7 @@ nav li a:hover{
         width: 100%;
     }
     .wstext {
-        font-size: 1em;
+        font-size: 1.6em;
         width: 100%;
         padding: 3% 0;
     }
@@ -891,6 +973,11 @@ nav li a:hover{
     }
     .developed {
         margin-left: 27%;
+    }
+}
+@media screen and (max-width: 518px) {
+    .social-icons {
+        float: left;
     }
 }
 @media screen and (max-width: 515px){
@@ -934,9 +1021,6 @@ nav li a:hover{
     .block {
         padding-right: 20px;
         padding-left: 20px;
-    }
-    nav ul{
-        padding: 0 20px;
     }
     .sl1 {
         font-size: 15px;
