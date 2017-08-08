@@ -279,7 +279,8 @@ nav li a:hover{
 .re_text2 {
     font-size: 1.5em;
     margin-left: 3%;
-    width: 100%;
+    width: 94%;
+    white-space: nowrap;
     letter-spacing: 1.12px;
 }
 
@@ -984,6 +985,9 @@ nav li a:hover{
     .developed {
         margin-left: 15%;
         margin-top: 4%;
+    }
+    .re_text2 {
+    white-space: normal;
     }
 }
 @media screen and (max-width: 440px){
